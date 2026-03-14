@@ -1,0 +1,15 @@
+/* Remove default center alignment that disrupts natural reading flow */
+.App {
+  min-height: 100vh;
+}
+
+/* Ensure smooth transitions on interactive elements only */
+button,
+a,
+input,
+select,
+textarea {
+  transition-property: color, background-color, border-color, opacity, box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
